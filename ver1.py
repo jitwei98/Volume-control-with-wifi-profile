@@ -18,7 +18,7 @@ class SSID:
 	def add_entry(self, SSID, volume):
 	# 	SSID = get_SSID()
 	# 	volume = promptVol()
-		with open('ssid.csv', 'a') as csvfile:
+		with open('ssid.csv', 'w') as csvfile:
 			fieldnames = ['SSID', 'volume']
 			writer = csv.DictWriter(csvfile, fieldnames = fieldnames)
 
